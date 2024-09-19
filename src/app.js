@@ -10,8 +10,10 @@ app.use(cors({
 }));
 
 app.use(express.json({limit: "20kb"}));  //to accepyt the json data
-app.use(express.urlencoded({extended: true, limit: "20kb"})); //to accept the url data
+app.use(express.urlencoded({extended: true, limit: "20kb"}));
+//to accept the url data, url se jo data ata h wo change hotah as per encoding thats why we need this , extended means andr andr 
 app.use(express.static("public"));
-app.use(cookieParser());
-export {app}  
+app.use(cookieParser());  //from my server to user ki cookie access kar pao or set kar pao, basically cookie pe crud kar pao
+
+export {app};  
 

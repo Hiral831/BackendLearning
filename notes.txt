@@ -1,0 +1,11 @@
+1. aysnc function always return promise, to jaha pe bh woh call hota h try to use .then and catch 
+2. Middleware :
+for checking ex: check if user is admin
+check if user is logged in
+
+(err, req, res, next) 
+
+end when we send response 
+/instagram -res.send("hitesh").
+
+jwt is a bearer token, jo usko bear krta h usko sahi mante h, jiske pass yeh token h usko hum data bhejte h

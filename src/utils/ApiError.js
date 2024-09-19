@@ -5,7 +5,7 @@ class ApiError extends Error {
         errors = [],
         stack = ""
     ){
-        super(message)
+        super(message)              //this is overriding the constructor of the Error class
         this.statusCode = statusCode
         this.data = null
         this.message = message
@@ -22,3 +22,5 @@ class ApiError extends Error {
 }
 
 export {ApiError}
+
+//above is based f
