@@ -9,3 +9,10 @@ end when we send response
 /instagram -res.send("hitesh").
 
 jwt is a bearer token, jo usko bear krta h usko sahi mante h, jiske pass yeh token h usko hum data bhejte h
+
+in uploading a file using multer and cloudinary sdk we are performing 2 steps settings that first store the file in local and than
+in the cloudinary so as we can reattempt if upload fails  
+
+jaha esi gunzaish h ki mamla pechida ho skta h waha try catch lgao na
+
+export default tab hi dete h jab manchaha name se import krvana h , otherwise we'll use the name as per export given 

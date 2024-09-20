@@ -15,5 +15,10 @@ app.use(express.urlencoded({extended: true, limit: "20kb"}));
 app.use(express.static("public"));
 app.use(cookieParser());  //from my server to user ki cookie access kar pao or set kar pao, basically cookie pe crud kar pao
 
+
+// routes import
+import userRouter from "./routes/user.routes.js"
+app.use("/api/v1/users", userRouter)  //http://localhost:4000/api/v1/users/register or login or any routes in user.route.js
+
 export {app};  
 
