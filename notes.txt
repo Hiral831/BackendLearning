@@ -16,3 +16,6 @@ in the cloudinary so as we can reattempt if upload fails
 jaha esi gunzaish h ki mamla pechida ho skta h waha try catch lgao na
 
 export default tab hi dete h jab manchaha name se import krvana h , otherwise we'll use the name as per export given 
+
+router alg se define kiya h express mei to usko app.js jahaa express server h waha import krke as a Middleware use krna pdega,
+also remember that by default chrome use get api.
