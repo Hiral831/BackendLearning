@@ -20,7 +20,7 @@ const generateAccessAndRefereshTokens = async(userId) =>{
       throw new ApiError(500, "Something went wrong while generating referesh and access token")
   }
 }
-constregisterUser = asyncHandler( async (req, res) => {
+const registerUser = asyncHandler( async (req, res) => {
   // get user details from frontend
   // validation - not empty
   // check if user already exists: username, email
@@ -260,7 +260,7 @@ const updateAccountDetails = asyncHandler(async(req, res) => {
           $set: {
               fullName,
               email
-              // email: email can write in this way also, above is ES6 concept
+              // email: email --can write in this way also, above is ES6 concept
           }
       },
       {new: true}
@@ -487,5 +487,6 @@ export {registerUser,
         updateUserCoverImage,
         updateUserAvatar,
         getUserChannelProfile,
-				getWatchHistory
+		getWatchHistory,
+        getCurrentUser
     }

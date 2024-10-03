@@ -6,6 +6,7 @@ import {  changeCurrentPassword,
           loginUser, 
           registerUser, 
           refreshAccessToken, 
+          getCurrentUser,
           updateAccountDetails, 
           updateUserAvatar, 
           updateUserCoverImage } from "../controllers/user.controller.js";
